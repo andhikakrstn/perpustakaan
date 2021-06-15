@@ -1,0 +1,64 @@
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+h2{
+        font-size: 50px;
+        color: black;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: rgb(207, 198, 198);
+}
+.sidebar header{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 70px;
+    border-bottom: 1px solid rgb(218, 211, 211);
+    background-color: rgb(207, 198, 198);
+    user-select: none;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(212, 205, 205);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+label #btn{
+    position:absolute;
+    cursor: pointer;
+    z-index: 1111;
+    left: 195px;
+    padding: 4px 9px;
+    top: 19px;
+    font-size: 25px;
+}
+form{
+    margin-left: 300px;
+    margin-top: 50px;
+}
