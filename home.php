@@ -14,11 +14,9 @@
     <header>My perpus</header>
     <ul>
         <li><a href="#"><i class="fas fa-book"></i>Home</a></li>
-        <li><a href="Karya_ilmiah/list_buku.php"><i class="fas fa-book"></i>Karya Ilmiah</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Novel</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Majalah</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Jurnal</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Laporan</a></li>
+        <li><a href="Modul_buku/list_buku.php"><i class="fas fa-book"></i>Data Buku</a></li>
+        <li><a href="#"><i class="fas fa-book"></i>Peminjaman</a></li>
+        <li><a href="#"><i class="fas fa-book"></i>Pengembalian</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Buku Tamu</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Elibrary</a></li>
         <li><a href="logout.php"><i class="fas fa-book"></i>Logout</a></li>
@@ -26,40 +24,17 @@
     </div>
     <h2>Selamat Datang</h2>
 <form action="home.php" method="post">
-            <legend>Pendataan</legend>
-            Nama : <input type="text" name="nama"><br><br>
-            Asal : <input type="text" name="asal"><br><br>
-            Umur : <input type="text" name="umur"><br><br>
-            Jenis Kelamin : 
-            <input type="radio" name="jk" value="Laki-Laki">Laki-laki
-            <input type="radio" name="jk" value="Perempuan">Perempuan <br><br>
-            Status : 
-            <select name="status">
-                <option>Pelajar</option>
-                <option>Belum Menikah</option>
-                <option>Sudah Menikah</option>
-            </select><br> <br>
-            Hobi : <input type="text" name="hobi"><br><br>
-            Alamat : <textarea name="alamat"></textarea><br><br>
-            Pendidikan Terakhir : 
-            <select name="pt">
-                <option>SD</option>
-                <option>SMP</option>
-                <option>SMA/K</option>
-                <option>Kuliah</option>
-                <option>Tidak Sekolah</option>
-            </select> <br> <br>
-            Agama : 
-            <select name="agama">
-                <option>Kristen</option>
-                <option>Katolik</option>
-                <option>Islam</option>
-                <option>Hindu</option>
-                <option>Budha</option>
-                <option>Kong hu Chu</option>
-            </select><br><br>
-            Makanan Kesukaan : <input type="text" name="makes"><br><br>
-            <button type="submit">Kirim</button>
+            <legend>Pendataan</legend><br> 
+            <input type="radio" name="Dosen" value="Dosen">Dosen
+            <input type="radio" name="Mahasiswa" value="Mahasiswa">Mahasiswa 
+            <input type="radio" name="Umum" value="Umum">Umum <br><br>
+            <label>Nim / nip :</label>
+            <input type="text" name="Nim / nip"><br><br>
+            <tr>
+				<td colspan="2" align="right">
+					<input type="submit" name="kirim" id="kirim" value="kirim" class="btn btn-kirim">
+				</td>
+			</tr>
     </form>
 </body>
 </html>
