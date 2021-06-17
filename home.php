@@ -14,13 +14,14 @@
     <header>My perpus</header>
     <ul>
         <li><a href="#"><i class="fas fa-book"></i>Home</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Karya Ilmiah</a></li>
+        <li><a href="Karya_ilmiah/list_buku.php"><i class="fas fa-book"></i>Karya Ilmiah</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Novel</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Majalah</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Jurnal</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Laporan</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Buku Tamu</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Elibrary</a></li>
+        <li><a href="logout.php"><i class="fas fa-book"></i>Logout</a></li>
     </ul>
     </div>
     <h2>Selamat Datang</h2>
