@@ -7,11 +7,11 @@
     text-decoration: none;
 }
 h2{
-        font-size: 50px;
-        color: black;
-        text-align: center;
-        margin: 0;
-        padding: 0;
+     font-size: 50px;
+     color: black;
+     text-align: center;
+     margin: 0;
+     padding: 0;
 }
 .sidebar{
     position: fixed;
@@ -61,4 +61,20 @@ label #btn{
 form{
     margin-left: 300px;
     margin-top: 50px;
+}
+.form{
+    background: #63c982;
+    border-radius: 5px;
+    padding: 4px 20px 15px 20px;
+    box-shadow: 0px 0px 5px black;
+    color: rgb(0, 0, 0);
+    width: 450px;
+    height: 210px;
+    margin: 200px;
+}
+.btn-submit {
+    padding: 5px;
+    background-color: #4bc932;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #4bc932;
 }
