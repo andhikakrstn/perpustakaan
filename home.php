@@ -18,7 +18,6 @@
         <li><a href="#"><i class="fas fa-book"></i>Peminjaman</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Pengembalian</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Buku Tamu</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Elibrary</a></li>
         <li><a href="logout.php"><i class="fas fa-book"></i>Logout</a></li>
     </ul>
     </div>
