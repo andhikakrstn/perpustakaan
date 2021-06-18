@@ -14,7 +14,7 @@
     <header>My perpus</header>
     <ul>
         <li><a href="#"><i class="fas fa-book"></i>Home</a></li>
-        <li><a href="Modul_buku/List_buku.php"><i class="fas fa-book"></i>Data Buku</a></li>
+        <li><a href="#"><i class="fas fa-book"></i>Data Buku</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Peminjaman</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Pengembalian</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Buku Tamu</a></li>
@@ -22,11 +22,12 @@
     </ul>
     </div>
     <h2>Selamat Datang</h2>
-<form action="home.php" method="post">
+    <form action="home.php" method="post">
             <legend>Pendataan</legend><br> 
-            <input type="radio" name="Dosen" value="Dosen">Dosen 
-            <input type="radio" name="Mahasiswa" value="Mahasiswa">Mahasiswa 
-            <input type="radio" name="Umum" value="Umum">Umum  <br><br>
+            <input type="radio" name="pengunjung" value="Dosen">Dosen 
+            <input type="radio" name="pengunjung" value="Mahasiswa">Mahasiswa 
+            <input type="radio" name="pengunjung" value="Umum">Umum  <br><br>
+
             <label>Nim / nip :</label>
             <input type="text" name="Nim / nip"><br><br>
             <tr>
