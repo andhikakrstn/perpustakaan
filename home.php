@@ -24,9 +24,9 @@
     <h2>Selamat Datang</h2>
 <form action="home.php" method="post">
             <legend>Pendataan</legend><br> 
-            <input type="radio" name="Dosen" value="Dosen">Dosen &nbsp &nbsp &nbsp
-            <input type="radio" name="Mahasiswa" value="Mahasiswa">Mahasiswa &nbsp &nbsp &nbsp
-            <input type="radio" name="Umum" value="Umum">Umum  &nbsp &nbsp &nbsp<br><br>
+            <input type="radio" name="Dosen" value="Dosen">Dosen 
+            <input type="radio" name="Mahasiswa" value="Mahasiswa">Mahasiswa 
+            <input type="radio" name="Umum" value="Umum">Umum  <br><br>
             <label>Nim / nip :</label>
             <input type="text" name="Nim / nip"><br><br>
             <tr>
