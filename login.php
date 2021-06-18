@@ -7,8 +7,8 @@ if (isset($_SESSION['user'])) {
     header('Location: home.php');
     exit();
 }
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +17,7 @@ if (isset($_SESSION['user'])) {
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<form method="post" name="form_login" id="form_login" action="proses-login.php">
+	<form method="post" name="form_login" id="form_login" action="proses-login.php" style="margin-top: 120px;">
 		<table class="form">
 			<tr>
 				<td colspan="2">
