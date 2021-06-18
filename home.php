@@ -18,16 +18,16 @@
         <li><a href="#"><i class="fas fa-book"></i>Peminjaman</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Pengembalian</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Buku Tamu</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Elibrary</a></li>
-        <li><a href="logout.php"><i class="fas fa-book"></i>Logout</a></li>
+        <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
     </ul>
     </div>
     <h2>Selamat Datang</h2>
     <form action="home.php" method="post">
             <legend>Pendataan</legend><br> 
-            <input type="radio" name="pengunjung" value="Dosen">Dosen
+            <input type="radio" name="pengunjung" value="Dosen">Dosen 
             <input type="radio" name="pengunjung" value="Mahasiswa">Mahasiswa 
-            <input type="radio" name="pengunjung" value="Umum">Umum <br><br>
+            <input type="radio" name="pengunjung" value="Umum">Umum  <br><br>
+
             <label>Nim / nip :</label>
             <input type="text" name="Nim / nip"><br><br>
             <tr>

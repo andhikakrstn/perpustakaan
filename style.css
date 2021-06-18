@@ -78,4 +78,96 @@ form{
     border-radius: 3px;
     box-shadow: 0px 0px 5px #4bc932;
 }
+.content {
+    width: 80%;
+    min-height: 500px;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #FFF;
+    border-radius: 5px;
+    color: #2c3e50;
+}
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+ 
+table.data {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+table.data th {
+    padding: 10px 5px;
+    margin: 200px;
+}
+
+table.data td {
+    padding: 10px 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-left: none;
+    border-right: none;
+}
+
+table.data td a.link {
+    color: #3F27E6;
+    text-decoration: underline;
+}
+table.data td a.link:hover {
+    color: #347FF7;
+    text-decoration: underline;
+}
+
+table.data tr:hover:not(:first-child) {
+    background-color: #000000;
+}
+
+table.data tr:not(:first-child):nth-of-type(odd) {
+    background-color: #000000;
+}
+table .btn{
+    font-size: 12px;
+}
+
+.btn-submit {
+    background-color: #C35045;
+}
+
+.btn-submit:hover {
+    background-color: #CA665C;
+}
+
+.btn-tambah {
+    background-color: #27ae60;
+}
+
+.btn-tambah-div{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.btn-tambah:hover {
+    background-color: #2ecc71;
+}
+
+.btn-edit {
+    background-color: #2980b9;
+}
+.btn-edit:hover{
+    background-color: #5DA7D8;
+}
+
+.btn-hapus {
+    background-color: #c0392b;
+}
+.btn-hapus:hover {
+    background-color: #CE5A4E;
+}
+
+.buku-cover {
+    max-width: 50px;
+}
