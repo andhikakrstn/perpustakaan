@@ -2,9 +2,9 @@
 
 include '../connection.php';
 
-$id_anggota = $_GET['id_anggota'];
+$nim = $_GET['nim'];
 
-$query = "DELETE FROM anggota WHERE anggota_id = $id_anggota";
+$query = "DELETE FROM tb_mahasiswa WHERE nim = $nim";
 $hasil = mysqli_query($db, $query);
 
 if ($hasil == true) {

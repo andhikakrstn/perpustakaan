@@ -1,18 +1,25 @@
 <?php
 include '../connection.php';
 
-$id_anggota = $_POST['id_anggota'];
+$nim = $_POST['nim'];
 $nama = $_POST['nama'];
-$jenis_kelamin = $_POST['jk'];
-$alamat = $_POST['alamat'];
-$no_telepon = $_POST['no_telepon'];
+$tmp_lahir = $_POST['tmp_lahir'];
+$tgl_lahir = $_POST['tgl_lahir'];
+$jurusan = $_POST['jurusan'];
+$fakultas = $_POST['fakultas'];
+$angkatan = $_POST['angkatan'];
+$umur = $_POST['umur'];
 
-$query = "UPDATE anggota 
-    SET anggota_nama = '$nama',
-        anggota_alamat = '$alamat',
-        anggota_jk = '$jenis_kelamin',
-        anggota_telp = '$no_telepon'
-    WHERE anggota_id = $id_anggota";
+$query = "UPDATE tb_mahasiswa 
+    SET nim = '$nim',
+    nama = '$nama',
+    tmp_lahir = '$tmp_lahir',
+    tgl_lahir = '$tgl_lahir',
+    jurusan = '$jurusan',
+    fakultas = '$fakultas',
+    angkatan = '$angkatan,'
+    umur ='$umur'
+    WHERE nim = $nim";
 
 $hasil = mysqli_query($db, $query);
 // var_dump(mysqli_error($db));
