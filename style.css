@@ -63,7 +63,7 @@ form{
     margin-top: 50px;
 }
 .form{
-    background: #63c982;
+    background: #62e67f;
     border-radius: 5px;
     padding: 4px 20px 15px 20px;
     box-shadow: 0px 0px 5px black;
@@ -84,7 +84,7 @@ form{
     float: right;
     padding: 10px;
     box-sizing: border-box;
-    background: #FFF;
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     color: #2c3e50;
 }
@@ -125,7 +125,10 @@ table .btn{
 }
 
 .btn-tambah {
-    background-color: #27ae60;
+    padding: 5px;
+    background-color: #30d9e6;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #088076;
 }
 
 .btn-tambah-div{
@@ -138,14 +141,20 @@ table .btn{
 }
 
 .btn-edit {
-    background-color: #2980b9;
+    padding: 5px;
+    background-color: #30d9e6;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #088076;
 }
 .btn-edit:hover{
     background-color: #5DA7D8;
 }
 
 .btn-hapus {
-    background-color: #c0392b;
+    padding: 5px;
+    background-color: #30d9e6;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #088076;
 }
 .btn-hapus:hover {
     background-color: #CE5A4E;
@@ -154,3 +163,15 @@ table .btn{
 .buku-cover {
     max-width: 50px;
 }
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+  
+a:visited {
+    color: red;
+}
+  
+a:hover {
+    color: green;
+}  
