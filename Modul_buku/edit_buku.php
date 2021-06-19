@@ -24,7 +24,8 @@ $data_buku = mysqli_fetch_assoc($hasil);
 </head>
 <body>
     <div class="container clearfix">
-        <?php include '../sidebar.php' ?>
+
+        <?php include '../sidebars.php' ?>
 
         <div class="content">
             <h3>Tambah Data Buku</h3>
