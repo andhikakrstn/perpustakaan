@@ -5,7 +5,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$database = "db_perpus";
+$database = "db_perpus2";
 
 // Create connection
 

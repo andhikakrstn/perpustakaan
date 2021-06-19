@@ -13,10 +13,11 @@
     <div class="sidebar">
     <header>My perpus</header>
     <ul>
-        <li><a href="#"><i class="fas fa-book"></i>Home</a></li>
+        <li><a href="home.php"><i class="fas fa-book"></i>Home</a></li>
+        <li><a href="Modul_kategori/list_kategori.php"><i class="fas fa-book"></i>kategori</a></li>
         <li><a href="Modul_buku/List_buku.php"><i class="fas fa-book"></i>Data Buku</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Peminjaman</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Pengembalian</a></li>
+        <li><a href="Modul_peminjaman/pinjam_data.php"><i class="fas fa-book"></i>Peminjaman</a></li>
+        <li><a href="Modul_pengembalian/list_pengembalian.php"><i class="fas fa-book"></i>Pengembalian</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Buku Tamu</a></li>
         <li><a href="../logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
     </ul>
