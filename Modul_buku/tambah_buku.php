@@ -16,9 +16,8 @@ if (!isset($_SESSION['user'])) {
 </head>
 <body>
     <div class="container clearfix">
-        <h1>SI Perpustakaan</h1>
 
-        <?php include '../sidebar.php' ?>
+        <?php include '../sidebars.php' ?>
 
         <div class="content">
             <h3>Tambah Data Buku</h3>

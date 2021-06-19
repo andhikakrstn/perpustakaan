@@ -59,7 +59,7 @@ label #btn{
     font-size: 25px;
 }
 form{
-    margin-left: 300px;
+    margin-left: 280px;
     margin-top: 50px;
 }
 .form{
@@ -88,22 +88,13 @@ form{
     border-radius: 5px;
     color: #2c3e50;
 }
-.clearfix:after { 
-    content: "."; 
-    visibility: hidden; 
-    display: block; 
-    height: 0; 
-    clear: both;
- }
- 
 table.data {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
 }
 
 table.data th {
     padding: 10px 5px;
-    margin: 200px;
 }
 
 table.data td {
@@ -123,22 +114,14 @@ table.data td a.link:hover {
 }
 
 table.data tr:hover:not(:first-child) {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 table.data tr:not(:first-child):nth-of-type(odd) {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 table .btn{
     font-size: 12px;
-}
-
-.btn-submit {
-    background-color: #C35045;
-}
-
-.btn-submit:hover {
-    background-color: #CA665C;
 }
 
 .btn-tambah {
