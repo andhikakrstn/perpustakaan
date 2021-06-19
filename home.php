@@ -14,7 +14,7 @@
     <header>My perpus</header>
     <ul>
         <li><a href="#"><i class="fas fa-book"></i>Home</a></li>
-        <li><a href="#"><i class="fas fa-book"></i>Data Buku</a></li>
+        <li><a href="../modul-buku/List_buku.php"><i class="fas fa-book"></i>Data Buku</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Peminjaman</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Pengembalian</a></li>
         <li><a href="#"><i class="fas fa-book"></i>Buku Tamu</a></li>
