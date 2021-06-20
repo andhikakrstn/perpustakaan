@@ -1,4 +1,9 @@
+<?php
 
+// ... ambil data dari database
+include 'proses_list_buku.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

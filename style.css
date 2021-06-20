@@ -59,11 +59,11 @@ label #btn{
     font-size: 25px;
 }
 form{
-    margin-left: 300px;
+    margin-left: 280px;
     margin-top: 50px;
 }
 .form{
-    background: #63c982;
+    background: #62e67f;
     border-radius: 5px;
     padding: 4px 20px 15px 20px;
     box-shadow: 0px 0px 5px black;
@@ -84,26 +84,17 @@ form{
     float: right;
     padding: 10px;
     box-sizing: border-box;
-    background: #FFF;
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     color: #2c3e50;
 }
-.clearfix:after { 
-    content: "."; 
-    visibility: hidden; 
-    display: block; 
-    height: 0; 
-    clear: both;
- }
- 
 table.data {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
 }
 
 table.data th {
     padding: 10px 5px;
-    margin: 200px;
 }
 
 table.data td {
@@ -123,26 +114,21 @@ table.data td a.link:hover {
 }
 
 table.data tr:hover:not(:first-child) {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 table.data tr:not(:first-child):nth-of-type(odd) {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 table .btn{
     font-size: 12px;
 }
 
-.btn-submit {
-    background-color: #C35045;
-}
-
-.btn-submit:hover {
-    background-color: #CA665C;
-}
-
 .btn-tambah {
-    background-color: #27ae60;
+    padding: 5px;
+    background-color: #30d9e6;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #088076;
 }
 
 .btn-tambah-div{
@@ -155,14 +141,20 @@ table .btn{
 }
 
 .btn-edit {
-    background-color: #2980b9;
+    padding: 5px;
+    background-color: #30d9e6;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #088076;
 }
 .btn-edit:hover{
     background-color: #5DA7D8;
 }
 
 .btn-hapus {
-    background-color: #c0392b;
+    padding: 5px;
+    background-color: #30d9e6;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #088076;
 }
 .btn-hapus:hover {
     background-color: #CE5A4E;
@@ -171,3 +163,15 @@ table .btn{
 .buku-cover {
     max-width: 50px;
 }
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+  
+a:visited {
+    color: red;
+}
+  
+a:hover {
+    color: green;
+}  
