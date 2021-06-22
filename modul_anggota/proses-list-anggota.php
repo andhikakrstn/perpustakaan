@@ -12,7 +12,7 @@ if (! isset($_SESSION['user'])) {
 
 include '../connection.php';
 
-$query = "SELECT * FROM tb_mahasiswa";
+$query = "SELECT * FROM anggota";
 
 $hasil = mysqli_query($db, $query);
 

@@ -8,17 +8,13 @@ if (! isset($_SESSION['user'])) {
 
 include '../connection.php';
 
-$nim = $_POST['nim'];
 $nama = $_POST['nama'];
-$tmp_lahir = $_POST['tmp_lahir'];
-$tgl_lahir = $_POST['tgl_lahir'];
-$jurusan = $_POST['jurusan'];
-$fakultas = $_POST['fakultas'];
-$angkatan = $_POST['angkatan'];
-$umur = $_POST['umur'];
+$jenis_kelamin = $_POST['jk'];
+$alamat = $_POST['alamat'];
+$no_telepon = $_POST['no_telepon'];
 
-$query = "INSERT INTO tb_mahasiswa (nim, nama, tmp_lahir, tgl_lahir, jurusan, fakultas, angkatan, umur) 
-    VALUES ('$nim', '$nama', '$tmp_lahir', '$tgl_lahir', '$jurusan', '$fakultas', '$angkatan', '$umur')";
+$query = "INSERT INTO anggota (anggota_nama, anggota_alamat, anggota_jk, anggota_telp) 
+    VALUES ('$nama', '$alamat', '$jenis_kelamin', '$no_telepon')";
 $hasil = mysqli_query($db, $query);
 
 if ($hasil == true) {

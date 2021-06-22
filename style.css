@@ -126,9 +126,9 @@ table .btn{
 
 .btn-tambah {
     padding: 5px;
-    background-color: #30d9e6;
+    background-color: #4df547;
     border-radius: 3px;
-    box-shadow: 0px 0px 5px #088076;
+    box-shadow: 0px 0px 5px #088012;
 }
 
 .btn-tambah-div{
@@ -137,27 +137,27 @@ table .btn{
 }
 
 .btn-tambah:hover {
-    background-color: #2ecc71;
+    background-color: #3ab835;
 }
 
 .btn-edit {
     padding: 5px;
-    background-color: #30d9e6;
+    background-color: #d2f15e;
     border-radius: 3px;
-    box-shadow: 0px 0px 5px #088076;
+    box-shadow: 0px 0px 5px #858201;
 }
 .btn-edit:hover{
-    background-color: #5DA7D8;
+    background-color: #97ad44;
 }
 
 .btn-hapus {
     padding: 5px;
-    background-color: #30d9e6;
+    background-color: #eb4848;
     border-radius: 3px;
-    box-shadow: 0px 0px 5px #088076;
+    box-shadow: 0px 0px 5px #800808;
 }
 .btn-hapus:hover {
-    background-color: #CE5A4E;
+    background-color: #c03d3d;
 }
 
 .buku-cover {
@@ -166,10 +166,6 @@ table .btn{
 
 a:link {
     color: rgb(0, 0, 0);
-}
-  
-a:visited {
-    color: red;
 }
   
 a:hover {

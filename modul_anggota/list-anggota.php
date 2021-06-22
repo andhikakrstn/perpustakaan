@@ -26,29 +26,23 @@ include 'proses-list-anggota.php';
             <?php else : ?>
             <table class="data">
                 <tr>
-                    <th>NIM</th>
+                    <th>ID</th>
                     <th>Nama</th>
-                    <th>Tempat Lahir</th>
-                    <th>Tanggal Lahir</th>
-                    <th>Jurusan</th>
-                    <th>Fakultas</th>
-                    <th>Angkatan</th>
-                    <th>Umur</th>
+                    <th>Alamat</th>
+                    <th>Jenis Kelamin</th>
+                    <th>No. Telp</th>
                     <th width="20%">Pilihan</th>
                 </tr>
-                <?php foreach ($data_anggota as $tb_mahasiswa) : ?>
+                <?php foreach ($data_anggota as $anggota) : ?>
                 <tr>
-                    <td><?php echo $tb_mahasiswa['nim'] ?></td>
-                    <td><?php echo $tb_mahasiswa['nama'] ?></td>
-                    <td><?php echo $tb_mahasiswa['tmp_lahir'] ?></td>
-                    <td><?php echo $tb_mahasiswa['tgl_lahir'] ?></td>
-                    <td><?php echo $tb_mahasiswa['jurusan'] ?></td>
-                    <td><?php echo $tb_mahasiswa['fakultas'] ?></td>
-                    <td><?php echo $tb_mahasiswa['angkatan'] ?></td>
-                    <td><?php echo $tb_mahasiswa['umur'] ?></td>
+                    <td><?php echo $anggota['anggota_id'] ?></td>
+                    <td><?php echo $anggota['anggota_nama'] ?></td>
+                    <td><?php echo $anggota['anggota_alamat'] ?></td>
+                    <td><?php echo $anggota['anggota_jk'] ?></td>
+                    <td><?php echo $anggota['anggota_telp'] ?></td>
                     <td>
-                        <a href="edit-anggota.php?id_anggota=<?php echo $tb_mahasiswa['nim']; ?>" class="btn btn-edit">Edit</a>
-                        <a href="delete-anggota.php?id_anggota=<?php echo $tb_mahasiswa['nim']; ?>" class="btn btn-hapus" onclick="return confirm('anda yakin akan menghapus data?');">Hapus</a>
+                        <a href="edit-anggota.php?id_anggota=<?php echo $anggota['anggota_id']; ?>" class="btn btn-edit">Edit</a>
+                        <a href="delete-anggota.php?id_anggota=<?php echo $anggota['anggota_id']; ?>" class="btn btn-hapus" onclick="return confirm('anda yakin akan menghapus data?');">Hapus</a>
                     </td>
                 </tr>
                 <?php  endforeach ?>
