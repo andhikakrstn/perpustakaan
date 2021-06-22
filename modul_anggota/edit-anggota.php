@@ -7,12 +7,14 @@ if (!isset($_SESSION['user'])) {
 
 include '../connection.php';
 
-$nim = $_GET['nim'];
-$query = "SELECT * FROM tb_mahasiswa WHERE id = $id";
+// ambil artikel yang mau di edit
+$id_anggota = $_GET['id_anggota'];
+$query = "SELECT * FROM anggota WHERE anggota_id = $id_anggota";
 $hasil = mysqli_query($db, $query);
 $data_anggota = mysqli_fetch_assoc($hasil);
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,22 +30,26 @@ $data_anggota = mysqli_fetch_assoc($hasil);
         <div class="content">
             <h3>Edit Data Anggota</h3>
             <form method="post" action="proses-edit-anggota.php">
-                <input type="hidden" name="nim" value="<?php echo $data_anggota['nim']; ?>">
+                <input type="hidden" name="id_anggota" value="<?php echo $data_anggota['anggota_id']; ?>">
                 <p>Nama</p>
-                <p><input type="text" name="nama" value="<?php echo $data_anggota['nama']; ?>"></p>
-                <p>Tempat Lahir</p>
-                <p><input type="text" name="tmp_lahir" value="<?php echo $data_anggota['tmp_lahir']; ?>"></p>
-                <p>Tanggal Lahir</p>
-                <p><input type="text" name="tgl_lahir" value="<?php echo $data_anggota['tgl_lahir']; ?>"></p>
-                <p>Jurusan</p>
-                <p><input type="text" name="jurusan" value="<?php echo $data_anggota['jurusan']; ?>"></p>
-                <p>Fakultas</p>
-                <p><input type="text" name="fakultas" value="<?php echo $data_anggota['fakultas']; ?>"></p>
-                <p>angkatan</p>
-                <p><input type="text" name="angkatan" value="<?php echo $data_anggota['angkatan']; ?>"></p>
-                <p>Umur</p>
-                <p><input type="text" name="umur" value="<?php echo $data_anggota['umur']; ?>"></p>
-                
+                <p><input type="text" name="nama" value="<?php echo $data_anggota['anggota_nama']; ?>"></p>
+                <p>Alamat</p>
+                <p><input type="text" name="alamat" value="<?php echo $data_anggota['anggota_alamat']; ?>"></p>
+                <p>Jenis Kelamin</p>
+                <p>
+                    <select name="jk">
+                        <?php if ($data_anggota['anggota_jk'] == "L") : ?>
+                        <option value="L" selected>Laki-laki</option>
+                        <option value="P">Perempuan</option>
+                        <?php else : ?>
+                        <option value="L">Laki-laki</option>
+                        <option value="P" selected>Perempuan</option>
+                        <?php  endif ?>
+                    </select>
+                </p>
+                <p>Telepon</p>
+                <p><input type="text" name="no_telepon" value="<?php echo $data_anggota['anggota_telp']; ?>"></p>
+                <p>
                     <input type="submit" class="btn btn-submit" value="Simpan">
                     <input type="reset" class="btn btn-submit" value="Batal" onclick="self.history.back();">
                 </p>
