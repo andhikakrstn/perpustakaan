@@ -36,7 +36,7 @@ $data_pinjam = mysqli_fetch_assoc($hasil);
                 unset($_SESSION['messages']); //menghapus pesan setelah refresh
             }
             ?>
-            <form action="proses-edit-pinjam.php" method="post">
+            <form action="proses_edit_pinjam.php" method="post">
             <input type="hidden" name="pinjam_id" value="<?php echo $id_pinjam ?>">
                 <p>Buku</p>
                 <p>

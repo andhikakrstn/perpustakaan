@@ -10,6 +10,7 @@ if (!isset($_SESSION['user'])) {
 include '../Modul_buku/proses_list_buku.php';
 
 // ... ambil data dari database
+include '../modul_anggota/proses-list-anggota.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +21,6 @@ include '../Modul_buku/proses_list_buku.php';
 </head>
 <body>
     <div class="container clearfix">
-    
 
         <?php include '../sidebars.php' ?>
 

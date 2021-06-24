@@ -160,7 +160,7 @@ INSERT INTO `pinjam` (`pinjam_id`, `buku_id`, `anggota_id`, `tgl_pinjam`, `tgl_j
 --
 -- Table structure for table `tb_mahasiswa`
 --
-
+          
 CREATE TABLE `tb_mahasiswa` (
   `nim` int(16) NOT NULL,
   `nama` varchar(64) NOT NULL,
