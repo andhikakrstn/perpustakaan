@@ -13,7 +13,7 @@ $stok_buku = cek_stok($db, $buku_id);
 
 if ($stok_buku < 1) {
 	$_SESSION['messages'] = '<font color="red">Hapus data gagal!</font>';
-    header('Location: pinjam-data.php');
+    header('Location: pinjam_data.php');
     exit();
 }
 
@@ -27,8 +27,8 @@ $hasil = mysqli_query($db, $query);
 
 if ($hasil == true) {
 	$_SESSION['messages'] = '<font color="green">Hapus data sukses!</font>';
-    header('location: pinjam-data.php');
+    header('location: pinjam_data.php');
 } else {
 	$_SESSION['messages'] = '<font color="red">Hapus data gagal!</font>';
-    header('location: pinjam-data.php');
+    header('location: pinjam_data.php');
 }
