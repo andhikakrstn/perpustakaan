@@ -1,4 +1,4 @@
-*{
+* {
     font-family: sans-serif;
     font-weight: 100;
     margin: 0;
@@ -6,21 +6,24 @@
     list-style: none;
     text-decoration: none;
 }
-h2{
-     font-size: 50px;
-     color: black;
-     text-align: center;
-     margin: 0;
-     padding: 0;
+
+h2 {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
-.sidebar{
+
+.sidebar {
     position: fixed;
     left: 0;
     width: 250px;
     height: 100%;
     background: rgb(207, 198, 198);
 }
-.sidebar header{
+
+.sidebar header {
     font-size: 22px;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -29,7 +32,8 @@ h2{
     background-color: rgb(207, 198, 198);
     user-select: none;
 }
-.sidebar ul a{
+
+.sidebar ul a {
     display: block;
     height: 100%;
     width: 100%;
@@ -42,15 +46,17 @@ h2{
     border-bottom: 1px solid rgb(0, 0, 0);
     transition: .4s;
 }
-ul li:hover a{
-    padding-left: 50px;
 
+ul li:hover a {
+    padding-left: 50px;
 }
-.sidebar ul a i{
+
+.sidebar ul a i {
     margin-right: 16px;
 }
-label #btn{
-    position:absolute;
+
+label #btn {
+    position: absolute;
     cursor: pointer;
     z-index: 1111;
     left: 195px;
@@ -58,11 +64,13 @@ label #btn{
     top: 19px;
     font-size: 25px;
 }
-form{
+
+form {
     margin-left: 280px;
     margin-top: 50px;
 }
-.form{
+
+.form {
     background: #62e67f;
     border-radius: 5px;
     padding: 4px 20px 15px 20px;
@@ -72,12 +80,14 @@ form{
     height: 210px;
     margin: 200px;
 }
+
 .btn-submit {
     padding: 5px;
     background-color: #4bc932;
     border-radius: 3px;
     box-shadow: 0px 0px 5px #4bc932;
 }
+
 .content {
     width: 80%;
     min-height: 500px;
@@ -88,6 +98,7 @@ form{
     border-radius: 5px;
     color: #2c3e50;
 }
+
 table.data {
     width: 90%;
     border-collapse: collapse;
@@ -108,6 +119,7 @@ table.data td a.link {
     color: #3F27E6;
     text-decoration: underline;
 }
+
 table.data td a.link:hover {
     color: #347FF7;
     text-decoration: underline;
@@ -120,7 +132,8 @@ table.data tr:hover:not(:first-child) {
 table.data tr:not(:first-child):nth-of-type(odd) {
     background-color: #ffffff;
 }
-table .btn{
+
+table .btn {
     font-size: 12px;
 }
 
@@ -131,7 +144,7 @@ table .btn{
     box-shadow: 0px 0px 5px #088012;
 }
 
-.btn-tambah-div{
+.btn-tambah-div {
     text-align: right;
     margin-right: 20px;
 }
@@ -146,7 +159,8 @@ table .btn{
     border-radius: 3px;
     box-shadow: 0px 0px 5px #858201;
 }
-.btn-edit:hover{
+
+.btn-edit:hover {
     background-color: #97ad44;
 }
 
@@ -156,6 +170,7 @@ table .btn{
     border-radius: 3px;
     box-shadow: 0px 0px 5px #800808;
 }
+
 .btn-hapus:hover {
     background-color: #c03d3d;
 }
@@ -167,7 +182,88 @@ table .btn{
 a:link {
     color: rgb(0, 0, 0);
 }
-  
+
 a:hover {
     color: green;
-}  
+}
+
+@media screen and (max-width:576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 40%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(73, 73, 73);
+        z-index: 0;
+        transform: translateX(100%);
+        transition: 1s all;
+    }
+    nav ul.slide {
+        transform: translateX(0);
+        position: fixed;
+    }
+}
+
+
+/*Menu Hamburger Animation*/
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    background-color: rgb(93, 117, 255);
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    background-color: rgb(93, 117, 255);
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+/*Menu Hamburger*/
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
